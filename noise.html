@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise Measurement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="noise.html">Measure Noise</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="container noise-container">
+        <h1>Noise Measurement</h1>
+        <p>Measure the noise level in your environment using your device's microphone. Click the button below to start measuring noise levels.</p>
+        <button id="start-measuring">Start Measuring</button>
+        <button id="stop-measuring" disabled>Stop Measuring</button>
+
+        <div class="graph-container">
+            <canvas id="noiseGraph" class="graph"></canvas>
+        </div>
+        <p id="noise-level">Current Noise Level: <span id="decibel-level">0</span> dB</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
